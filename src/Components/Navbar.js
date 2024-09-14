@@ -9,8 +9,7 @@ export default function Navbar(){
     return(
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <img src="https://www.jiocinema.com/images/jio_logo.svg"/>
-                <p>JioCinema</p>
+                <p>Logo</p>
             </div>
             {valueFromContext.jwt == "" && <button className={styles.signinButton} onClick={()=>navigate("/login")}>Sign In</button>}
             {valueFromContext.jwt != "" && <button className={styles.signinButton} onClick={()=>{
