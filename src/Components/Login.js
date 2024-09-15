@@ -89,7 +89,7 @@ export default function Login(){
                     fontSize:"2vh"
                 }}>{error}</p>
                 <button className={styles.button} onClick={handleLogin}>Continue</button>
-                <p className={styles.p} >New to JioCinema? <span className={styles.span} onClick={()=>{
+                <p className={styles.p} >New to website? <span className={styles.span} onClick={()=>{
                     return navigate("/signup")
                 }}>Sign Up here.</span></p>
                 
