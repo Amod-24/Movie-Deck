@@ -22,7 +22,7 @@ export default function Login(){
                 method: "POST",
                 headers:{
                     'accept' : "application/json",
-                    'projectID' : valueFromContext.projectId,
+                    'projectID' : valueFromContext.projectID,
                     'Content-Type': "application/json"
                 },
                 body: JSON.stringify(credentials)
@@ -30,10 +30,10 @@ export default function Login(){
             let data = await res.json()
             if(data.status == "success"){
                 setError("");
-                valueFromContext.username = data.data.user.name;
-                valueFromContext.email = credentials.email;
-                valueFromContext.password = credentials.password;
-                valueFromContext.jwt = data.token;
+                valueFromContext.setUsername(data.data.user.name);
+                valueFromContext.setEmail(credentials.email);
+                valueFromContext.setPassword(credentials.password);
+                valueFromContext.setJwt(data.token);
                 navigate("/");
             }
             else{

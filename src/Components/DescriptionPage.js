@@ -20,7 +20,7 @@ export default function Description(){
                     method:"GET",
                     headers:{
                         'accept' : "application/json",
-                        'projectID' : valueFromContext.projectId,
+                        'projectID' : valueFromContext.projectID,
                         'Authorization' : `Bearer ${valueFromContext.jwt}`
                     }
 

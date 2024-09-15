@@ -17,7 +17,7 @@ export default function AllShows(){
                 method: "GET",
                 headers: {
                     'accept' : "application/json",
-                    'projectID' : valueFromContext.projectId,
+                    'projectID' : valueFromContext.projectID,
                 }
     
             });
@@ -39,7 +39,7 @@ export default function AllShows(){
                 method: "GET",
                 headers: {
                     'accept' : "application/json",
-                    'projectID' : valueFromContext.projectId,
+                    'projectID' : valueFromContext.projectID,
                 }
             });
             let movie = await moviesData.json();

@@ -23,7 +23,7 @@ export default function SignUp(){
                 method: "POST",
                 headers:{
                     'accept' : "application/json",
-                    'projectID' : valueFromContext.projectId,
+                    'projectID' : valueFromContext.projectID,
                     'Content-Type': "application/json"
                 },
                 body: JSON.stringify(credentials)

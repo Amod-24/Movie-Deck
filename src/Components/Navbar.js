@@ -13,10 +13,10 @@ export default function Navbar(){
             </div>
             {valueFromContext.jwt == "" && <button className={styles.signinButton} onClick={()=>navigate("/login")}>Sign In</button>}
             {valueFromContext.jwt != "" && <button className={styles.signinButton} onClick={()=>{
-                valueFromContext.email = "";
-                valueFromContext.username = "";
-                valueFromContext.password = "";
-                valueFromContext.jwt = "";
+                valueFromContext.setEmail("");
+                valueFromContext.setUsername("");
+                valueFromContext.setPassword("");
+                valueFromContext.setJwt("");
                 navigate("/");
             }}>Sign Out</button>}
         </nav>

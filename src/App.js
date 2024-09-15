@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { apiContextProvider } from "./Components/Context.js";
+import { ApiContextProvider } from "./Components/Context.js";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import Homepage from "./Components/Homepage";
@@ -22,9 +22,9 @@ function App() {
     // {path:"/watch/:video",element:<Watch/>},
   ]);
   return (
-    <apiContextProvider>
+    <ApiContextProvider>
       <RouterProvider router={router} />
-    </apiContextProvider>
+    </ApiContextProvider>
   );
 }
 

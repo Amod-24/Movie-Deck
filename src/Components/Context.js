@@ -1,24 +1,23 @@
 import { createContext, useState } from "react";
-const apiContext = createContext({
-    projectId: "qcjfyfgmr5ux",
-    username: "",
-    email: "",
-    password: "",
-    jwt:""
-});
+const apiContext = createContext();
 // const [id, setId] = useState("qcjfyfgmr5ux");
-function apiContextProvider({children}){
+function ApiContextProvider({children}){
+    const [jwt,setJwt] = useState("");
+    const [username, setUsername] = useState("");
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+    const projectID = "qcjfyfgmr5ux";
     return (
         <apiContext.Provider value={{
-            projectId: "qcjfyfgmr5ux",
-            username: "",
-            email: "",
-            password: "",
-            jwt:""
+            jwt,setJwt,
+            username,setUsername,
+            email,setEmail,
+            password,setPassword,
+            projectID
         }}>
             {children}
         </apiContext.Provider>
     )
 }
 export default apiContext;
-export { apiContextProvider };
+export { ApiContextProvider };
