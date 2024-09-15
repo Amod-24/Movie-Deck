@@ -2,7 +2,8 @@
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    height: 35vh;
+    height: 110%;
+    margin-bottom: 4%;
     
 }
 .categoryName{

@@ -17,10 +17,7 @@ export default function MovieCard({movie}){
     return (
         <div onClick={movieCardClicked}>
 
-            <div className={styles.card} 
-            style={{
-                // backgroundImage:`url(${movie.thumbnail})`
-            }}>
+            <div className={styles.card} >
                 <img src={movie.thumbnail}/>
             </div>
         </div>
