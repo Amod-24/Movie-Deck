@@ -1,8 +1,5 @@
 Movie Deck 🎬
 
-
-Welcome to Movie Deck, a movie browsing platform where users can explore movies categorized by genres, with authentication features such as Sign In and Sign Up. The website fetches dynamic movie data from an external API to provide the latest and trending movies.
-
 Welcome to movie deck, a movie browsing platform where one can see movies categories wise and see details of the movie by clicking on its card
 
 Features ✨
