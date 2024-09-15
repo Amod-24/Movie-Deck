@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
-import apiContextProvider from "./Context.js";
+import apiContext from "./Context.js";
 import styles from "../css/AllShows.module.css";
 import MovieCarousel from "./MovieCarousel.js";
 
 export default function AllShows(){
-    const valueFromContext = useContext(apiContextProvider);
+    const valueFromContext = useContext(apiContext);
     const navigate = useNavigate();
     const [limit, setLimit] = useState(110);
     const [categoryList, setCategoryList] = useState([]);

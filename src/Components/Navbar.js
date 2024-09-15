@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../css/Navbar.module.css";
 import { useContext } from "react";
-import apiContextProvider from "./Context";
+import apiContext from "./Context";
 
 export default function Navbar(){
-    const valueFromContext = useContext(apiContextProvider);
+    const valueFromContext = useContext(apiContext);
     const navigate = useNavigate();
     return(
         <nav className={styles.navbar}>

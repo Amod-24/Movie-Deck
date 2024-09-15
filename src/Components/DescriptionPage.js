@@ -5,10 +5,10 @@ import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
-import apiContextProvider from "./Context";
+import apiContext from "./Context";
 export default function Description(){
     const navigate = useNavigate();
-    const valueFromContext = useContext(apiContextProvider);
+    const valueFromContext = useContext(apiContext);
     // valueFromContext.jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NGEwMmQ1NWI5ODUwYTAyNzk4NWMwYyIsImlhdCI6MTcxNjEyNjU0OCwiZXhwIjoxNzQ3NjYyNTQ4fQ.Vbl0yhhjXRbJap3Dd3qs_NFN1mxLIZ2Ib_yXF630TmQ";
     const [detail, setDetail] = useState(null);
     const {id} = useParams();

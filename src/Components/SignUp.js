@@ -4,10 +4,10 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 
 import styles from "../css/Login.module.css";
 import { useNavigate } from "react-router-dom";
-import apiContextProvider from "./Context.js";
+import apiContext from "./Context.js";
 
 export default function SignUp(){
-    const valueFromContext = useContext(apiContextProvider);
+    const valueFromContext = useContext(apiContext);
     const navigate = useNavigate()
     const [error, setError] = useState("")
     const [visible, setVisible] = useState(false);

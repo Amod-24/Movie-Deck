@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import apiContextProvider from "./Context";
+import apiContext from "./Context";
 export default function Watch(){
     const navigate = useNavigate();
     const {video} = useParams();
-    const valueFromContext = useContext(apiContextProvider);
+    const valueFromContext = useContext(apiContext);
     if(valueFromContext.jwt != ""){
         return(
             <video>
